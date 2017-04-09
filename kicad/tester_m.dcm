@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRLML2402
+D 20V Vds, 0.95 A Id, N-channel MOSFET, SOT-23
+K N-Channel MOSFET
+$ENDCMP
+#
+$CMP IRLML6402
+D -20V Vds, -3.7A Id, P-Channel MOSFET, SOT-23-3
+K P-Channel MOSFET
+$ENDCMP
+#
+$CMP LTC4054
+D Standalone Linear Li-Ion Battery Charger
+$ENDCMP
+#
+$CMP NCP1450
+D PWM Step−up DC−DC Controller
+$ENDCMP
+#
+$CMP NCP1450A
+D PWM Step−up DC−DC Controller
+$ENDCMP
+#
+$CMP OLED_128x64
+D Oled lcd 128x64 dots
+K lcd
+$ENDCMP
+#
+$CMP SM5819
+D  Forward Current: 1 A Reverse Voltage: 20 to 40 V
+K diode schottky
+$ENDCMP
+#
+$CMP XC6206P332
+D Low ESR Cap.Compatible Positive Voltage Regulator
+$ENDCMP
+#
+#End Doc Library
