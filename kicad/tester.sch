@@ -93,6 +93,7 @@ LIBS:Oscillators
 LIBS:powerint
 LIBS:Power_Management
 LIBS:tester_m
+LIBS:open-project
 LIBS:w_connectors
 LIBS:tester-cache
 EELAYER 26 0
@@ -488,7 +489,7 @@ U 1 1 58E672E8
 P 1350 2450
 F 0 "U1" H 1456 4187 60  0000 C CNN
 F 1 "OLED_128x64" H 1456 4081 60  0000 C CNN
-F 2 "" H 1350 1750 60  0001 C CNN
+F 2 "tester:oled" H 1350 1750 60  0001 C CNN
 F 3 "" H 1350 1750 60  0001 C CNN
 	1    1350 2450
 	1    0    0    -1  
