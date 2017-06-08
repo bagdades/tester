@@ -65,14 +65,12 @@ LIBS:video
 LIBS:diode
 LIBS:elec-unifil
 LIBS:gennum
-LIBS:graphic
 LIBS:hc11
 LIBS:intersil
 LIBS:ir
 LIBS:Lattice
 LIBS:leds
 LIBS:LEM
-LIBS:logo
 LIBS:maxim
 LIBS:mechanical
 LIBS:microchip_dspic33dsc
@@ -885,7 +883,7 @@ U 1 1 58E6F552
 P 4900 4100
 F 0 "D2" H 5100 4050 50  0000 C CNN
 F 1 "LED_ALT" H 5000 4200 50  0000 C CNN
-F 2 "" H 4900 4100 50  0001 C CNN
+F 2 "LEDs:LED_D3.0mm" H 4900 4100 50  0001 C CNN
 F 3 "" H 4900 4100 50  0001 C CNN
 	1    4900 4100
 	-1   0    0    1   
