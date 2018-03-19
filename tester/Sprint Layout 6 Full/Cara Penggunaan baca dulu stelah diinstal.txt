@@ -1,0 +1,21 @@
+1. Instal Sprint-Layout 6.0 Demo.exe 
+2. copy patch ke dalam folder sprint layout 6.0
+
+====================================================
+NB:
+Pengaturan directory macros ada di
+Options>General Setting>Macro Directory
+
+Setting aslinya di >> C:\Documents and Settings\All Users\Documents\Layout60
+
+Tp directory hasil instalan versi demo namanya >> C:\Documents and Settings\All Users\Documents\Layout60(DEMO)
+
+Harus direname diilangi kata (DEMO) nya..
+
+Jadi Untuk makros agar bisa muncul cari c:\users\public\documents\layout60\makros(demo) ,
+kemudian hapus tulisan demo dan kurungnya
+
+
+=======================================================================
+kunjungi terus sharecomfree.blogspot.com akan terupdate setiap saat
+=======================================================================

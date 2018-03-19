@@ -1,107 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:tester-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:w_transistor
-LIBS:ftdi
-LIBS:nxp
-LIBS:ESD_Protection
-LIBS:ncp1450
-LIBS:references
-LIBS:74xgxx
-LIBS:ac-dc
-LIBS:actel
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:dc-dc
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:pspice
-LIBS:relays
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:sensors
-LIBS:silabs
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:transf
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:video
-LIBS:diode
-LIBS:elec-unifil
-LIBS:gennum
-LIBS:hc11
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:LEM
-LIBS:maxim
-LIBS:mechanical
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:powerint
-LIBS:Power_Management
-LIBS:tester_m
-LIBS:w_connectors
-LIBS:w_analog
-LIBS:w_device
-LIBS:w_logic
-LIBS:w_memory
-LIBS:w_microcontrollers
-LIBS:w_opto
-LIBS:w_relay
-LIBS:w_rtx
-LIBS:w_vacuum
+EESchema Schematic File Version 4
 LIBS:tester-cache
 EELAYER 26 0
 EELAYER END
@@ -118,18 +15,18 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA328-AU U3
+L tester-rescue:ATMEGA328-AU U3
 U 1 1 58E548AA
 P 4450 2050
 F 0 "U3" H 4500 3417 50  0000 C CNN
 F 1 "ATMEGA328-AU" H 4500 3326 50  0000 C CNN
-F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 4450 2050 50  0001 C CIN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 4450 2050 50  0001 C CIN
 F 3 "" H 4450 2050 50  0001 C CNN
 	1    4450 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR01
+L tester-rescue:GND-RESCUE-tester #PWR01
 U 1 1 58E54930
 P 3400 3400
 F 0 "#PWR01" H 3400 3150 50  0001 C CNN
@@ -140,7 +37,7 @@ F 3 "" H 3400 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L L L2
+L tester-rescue:L L2
 U 1 1 58E5497B
 P 3150 1050
 F 0 "L2" V 3340 1050 50  0000 C CNN
@@ -151,7 +48,7 @@ F 3 "" H 3150 1050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Crystal_Small Y1
+L tester-rescue:Crystal_Small Y1
 U 1 1 58E54A73
 P 5850 1550
 F 0 "Y1" H 5750 1500 50  0000 C CNN
@@ -162,18 +59,18 @@ F 3 "" H 5850 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C11
+L tester-rescue:C_Small C11
 U 1 1 58E54B24
 P 6400 1550
 F 0 "C11" V 6350 1450 50  0000 C CNN
 F 1 "22pF" V 6350 1700 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 6400 1550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 1550 50  0001 C CNN
 F 3 "" H 6400 1550 50  0001 C CNN
 	1    6400 1550
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR02
+L tester-rescue:GND-RESCUE-tester #PWR02
 U 1 1 58E54BE3
 P 6650 1550
 F 0 "#PWR02" H 6650 1300 50  0001 C CNN
@@ -184,18 +81,18 @@ F 3 "" H 6650 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C12
+L tester-rescue:C_Small C12
 U 1 1 58E54C2B
 P 6400 1700
 F 0 "C12" V 6350 1600 50  0000 C CNN
 F 1 "22pF" V 6350 1850 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 6400 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6400 1700 50  0001 C CNN
 F 3 "" H 6400 1700 50  0001 C CNN
 	1    6400 1700
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR03
+L tester-rescue:GND-RESCUE-tester #PWR03
 U 1 1 58E54C51
 P 6650 1700
 F 0 "#PWR03" H 6650 1450 50  0001 C CNN
@@ -206,96 +103,96 @@ F 3 "" H 6650 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R15
+L tester-rescue:R_Small R15
 U 1 1 58E550AE
 P 7100 1050
 F 0 "R15" V 7050 900 50  0000 C CNN
 F 1 "470k" V 7050 1250 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 7100 1050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7100 1050 50  0001 C CNN
 F 3 "" H 7100 1050 50  0001 C CNN
 	1    7100 1050
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R17
+L tester-rescue:R_Small R17
 U 1 1 58E55120
 P 7100 1250
 F 0 "R17" V 7050 1100 50  0000 C CNN
 F 1 "470k" V 7050 1450 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 7100 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7100 1250 50  0001 C CNN
 F 3 "" H 7100 1250 50  0001 C CNN
 	1    7100 1250
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R19
+L tester-rescue:R_Small R19
 U 1 1 58E5515D
 P 7100 1450
 F 0 "R19" V 7050 1300 50  0000 C CNN
 F 1 "470k" V 7050 1650 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 7100 1450 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7100 1450 50  0001 C CNN
 F 3 "" H 7100 1450 50  0001 C CNN
 	1    7100 1450
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R14
+L tester-rescue:R_Small R14
 U 1 1 58E554EA
 P 7100 950
 F 0 "R14" V 7050 800 50  0000 C CNN
 F 1 "680" V 7050 1150 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 7100 950 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7100 950 50  0001 C CNN
 F 3 "" H 7100 950 50  0001 C CNN
 	1    7100 950 
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R16
+L tester-rescue:R_Small R16
 U 1 1 58E55523
 P 7100 1150
 F 0 "R16" V 7050 1000 50  0000 C CNN
 F 1 "680" V 7050 1350 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 7100 1150 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7100 1150 50  0001 C CNN
 F 3 "" H 7100 1150 50  0001 C CNN
 	1    7100 1150
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R18
+L tester-rescue:R_Small R18
 U 1 1 58E5554F
 P 7100 1350
 F 0 "R18" V 7050 1200 50  0000 C CNN
 F 1 "680" V 7050 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 7100 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7100 1350 50  0001 C CNN
 F 3 "" H 7100 1350 50  0001 C CNN
 	1    7100 1350
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C7
+L tester-rescue:C_Small C7
 U 1 1 58E55BD8
 P 3150 1250
 F 0 "C7" V 3100 1150 50  0000 C CNN
 F 1 "0.1u" V 3100 1400 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 3150 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3150 1250 50  0001 C CNN
 F 3 "" H 3150 1250 50  0001 C CNN
 	1    3150 1250
 	0    1    1    0   
 $EndComp
 $Comp
-L SRV05 U6
+L tester-rescue:SRV05 U6
 U 1 1 58E55DE3
 P 8450 1100
 F 0 "U6" H 8450 735 50  0000 C CNN
 F 1 "SRV05" H 8450 826 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 8450 1100 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8450 1100 50  0001 C CNN
 F 3 "" H 8450 1100 50  0001 C CNN
 	1    8450 1100
 	-1   0    0    1   
 $EndComp
 NoConn ~ 8950 950 
 $Comp
-L GND-RESCUE-tester #PWR04
+L tester-rescue:GND-RESCUE-tester #PWR04
 U 1 1 58E563E9
 P 9100 1100
 F 0 "#PWR04" H 9100 850 50  0001 C CNN
@@ -306,7 +203,7 @@ F 3 "" H 9100 1100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VCC #PWR05
+L power:VCC #PWR05
 U 1 1 58E564A5
 P 7850 1100
 F 0 "#PWR05" H 7850 950 50  0001 C CNN
@@ -317,7 +214,7 @@ F 3 "" H 7850 1100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VCC #PWR06
+L power:VCC #PWR06
 U 1 1 58E5663C
 P 2900 900
 F 0 "#PWR06" H 2900 750 50  0001 C CNN
@@ -328,29 +225,29 @@ F 3 "" H 2900 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TL431DBZ D3
+L tester-rescue:TL431DBZ D3
 U 1 1 58E568F8
 P 6450 2200
 F 0 "D3" H 6650 2150 50  0000 C CNN
 F 1 "TL431DBZ" H 6200 2150 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 6450 2050 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6450 2050 50  0001 C CIN
 F 3 "" H 6450 2200 50  0001 C CNN
 	1    6450 2200
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C8
+L tester-rescue:C_Small C8
 U 1 1 58E56B9F
 P 3400 1800
 F 0 "C8" H 3300 1700 50  0000 C CNN
 F 1 "1n" H 3300 1900 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 3400 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3400 1800 50  0001 C CNN
 F 3 "" H 3400 1800 50  0001 C CNN
 	1    3400 1800
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR07
+L tester-rescue:GND-RESCUE-tester #PWR07
 U 1 1 58E56DC8
 P 3400 1950
 F 0 "#PWR07" H 3400 1700 50  0001 C CNN
@@ -361,7 +258,7 @@ F 3 "" H 3400 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR08
+L tester-rescue:GND-RESCUE-tester #PWR08
 U 1 1 58E57139
 P 2950 1250
 F 0 "#PWR08" H 2950 1000 50  0001 C CNN
@@ -372,7 +269,7 @@ F 3 "" H 2950 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR09
+L tester-rescue:GND-RESCUE-tester #PWR09
 U 1 1 58E5743F
 P 6900 2200
 F 0 "#PWR09" H 6900 1950 50  0001 C CNN
@@ -383,18 +280,18 @@ F 3 "" H 6900 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C13
+L tester-rescue:C_Small C13
 U 1 1 58E57564
 P 6650 2350
 F 0 "C13" V 6600 2250 50  0000 C CNN
 F 1 "0.1u" V 6600 2500 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 6650 2350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6650 2350 50  0001 C CNN
 F 3 "" H 6650 2350 50  0001 C CNN
 	1    6650 2350
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR010
+L tester-rescue:GND-RESCUE-tester #PWR010
 U 1 1 58E5765E
 P 6900 2350
 F 0 "#PWR010" H 6900 2100 50  0001 C CNN
@@ -405,18 +302,18 @@ F 3 "" H 6900 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R12
+L tester-rescue:R_Small R12
 U 1 1 58E57769
 P 6650 2500
 F 0 "R12" V 6600 2350 50  0000 C CNN
 F 1 "2k2" V 6600 2700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 6650 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6650 2500 50  0001 C CNN
 F 3 "" H 6650 2500 50  0001 C CNN
 	1    6650 2500
 	0    1    1    0   
 $EndComp
 $Comp
-L VCC #PWR011
+L power:VCC #PWR011
 U 1 1 58E578EB
 P 6900 2500
 F 0 "#PWR011" H 6900 2350 50  0001 C CNN
@@ -427,24 +324,24 @@ F 3 "" H 6900 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R10
+L tester-rescue:R_Small R10
 U 1 1 58E57C32
 P 5850 2400
 F 0 "R10" V 5800 2250 50  0000 C CNN
 F 1 "10k" V 5800 2550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 5850 2400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 2400 50  0001 C CNN
 F 3 "" H 5850 2400 50  0001 C CNN
 	1    5850 2400
 	0    1    1    0   
 $EndComp
 NoConn ~ 5450 2100
 $Comp
-L 74LVC1G17 U5
+L tester-rescue:74LVC1G17 U5
 U 1 1 58E654E6
 P 7400 2750
 F 0 "U5" H 7375 3017 50  0000 C CNN
 F 1 "74LVC1G17" H 7375 2926 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 7400 2750 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7400 2750 50  0001 C CNN
 F 3 "" H 7400 2750 50  0001 C CNN
 	1    7400 2750
 	-1   0    0    -1  
@@ -456,29 +353,29 @@ MISO
 Text Label 5600 1450 0    60   ~ 0
 SCK
 $Comp
-L R_Small R21
+L tester-rescue:R_Small R21
 U 1 1 58E65E17
 P 7750 2100
 F 0 "R21" V 7700 1950 50  0000 C CNN
 F 1 "10k" V 7700 2300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 7750 2100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7750 2100 50  0001 C CNN
 F 3 "" H 7750 2100 50  0001 C CNN
 	1    7750 2100
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R22
+L tester-rescue:R_Small R22
 U 1 1 58E65E87
 P 7750 2200
 F 0 "R22" V 7700 2050 50  0000 C CNN
 F 1 "3k3" V 7700 2400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 7750 2200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7750 2200 50  0001 C CNN
 F 3 "" H 7750 2200 50  0001 C CNN
 	1    7750 2200
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR012
+L tester-rescue:GND-RESCUE-tester #PWR012
 U 1 1 58E65FF2
 P 8050 2200
 F 0 "#PWR012" H 8050 1950 50  0001 C CNN
@@ -491,7 +388,7 @@ $EndComp
 Text Label 5450 2400 0    60   ~ 0
 RES
 $Comp
-L OLED_128x64 U1
+L tester_m:OLED_128x64 U1
 U 1 1 58E672E8
 P 1350 2450
 F 0 "U1" H 1456 4187 60  0000 C CNN
@@ -504,7 +401,7 @@ $EndComp
 NoConn ~ 1800 1000
 NoConn ~ 1800 1600
 $Comp
-L GND-RESCUE-tester #PWR013
+L tester-rescue:GND-RESCUE-tester #PWR013
 U 1 1 58E675E3
 P 2050 4050
 F 0 "#PWR013" H 2050 3800 50  0001 C CNN
@@ -515,101 +412,101 @@ F 3 "" H 2050 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L tester-rescue:C_Small C3
 U 1 1 58E67FC8
 P 2050 1100
 F 0 "C3" V 2100 1200 50  0000 C CNN
 F 1 "1u" V 2100 1000 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 2050 1100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 1100 50  0001 C CNN
 F 3 "" H 2050 1100 50  0001 C CNN
 	1    2050 1100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C4
+L tester-rescue:C_Small C4
 U 1 1 58E68443
 P 2050 1300
 F 0 "C4" V 2100 1400 50  0000 C CNN
 F 1 "1u" V 2100 1200 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 2050 1300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 1300 50  0001 C CNN
 F 3 "" H 2050 1300 50  0001 C CNN
 	1    2050 1300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C5
+L tester-rescue:C_Small C5
 U 1 1 58E6869C
 P 2250 3600
 F 0 "C5" V 2300 3700 50  0000 C CNN
 F 1 "2u2" V 2300 3500 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 2250 3600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2250 3600 50  0001 C CNN
 F 3 "" H 2250 3600 50  0001 C CNN
 	1    2250 3600
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C6
+L tester-rescue:C_Small C6
 U 1 1 58E68983
 P 2400 3700
 F 0 "C6" V 2350 3800 50  0000 C CNN
 F 1 "2u2" V 2350 3600 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 2400 3700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2400 3700 50  0001 C CNN
 F 3 "" H 2400 3700 50  0001 C CNN
 	1    2400 3700
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R1
+L tester-rescue:R_Small R1
 U 1 1 58E68B6D
 P 2300 2300
 F 0 "R1" V 2250 2150 50  0000 C CNN
 F 1 "10k" V 2250 2500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2300 2300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2300 2300 50  0001 C CNN
 F 3 "" H 2300 2300 50  0001 C CNN
 	1    2300 2300
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R2
+L tester-rescue:R_Small R2
 U 1 1 58E68CF3
 P 2300 2400
 F 0 "R2" V 2250 2250 50  0000 C CNN
 F 1 "10k" V 2250 2600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2300 2400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2300 2400 50  0001 C CNN
 F 3 "" H 2300 2400 50  0001 C CNN
 	1    2300 2400
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R3
+L tester-rescue:R_Small R3
 U 1 1 58E68D3D
 P 2300 2700
 F 0 "R3" V 2250 2550 50  0000 C CNN
 F 1 "10k" V 2250 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2300 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2300 2700 50  0001 C CNN
 F 3 "" H 2300 2700 50  0001 C CNN
 	1    2300 2700
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R4
+L tester-rescue:R_Small R4
 U 1 1 58E68D99
 P 2300 2800
 F 0 "R4" V 2250 2650 50  0000 C CNN
 F 1 "10k" V 2250 3000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2300 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2300 2800 50  0001 C CNN
 F 3 "" H 2300 2800 50  0001 C CNN
 	1    2300 2800
 	0    1    1    0   
 $EndComp
 NoConn ~ 1800 2900
 $Comp
-L R_Small R5
+L tester-rescue:R_Small R5
 U 1 1 58E69119
 P 2550 3500
 F 0 "R5" V 2500 3350 50  0000 C CNN
 F 1 "290k" V 2500 3700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2550 3500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 3500 50  0001 C CNN
 F 3 "" H 2550 3500 50  0001 C CNN
 	1    2550 3500
 	0    1    1    0   
@@ -632,29 +529,29 @@ D0
 Text Label 5700 2550 0    60   ~ 0
 D1
 $Comp
-L NCP1450A U2
+L tester_m:NCP1450A U2
 U 1 1 58E6876A
 P 3300 5000
 F 0 "U2" H 3300 5347 60  0000 C CNN
 F 1 "NCP1450A" H 3300 5241 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3000 5200 60  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3000 5200 60  0001 C CNN
 F 3 "" H 3300 5000 60  0001 C CNN
 	1    3300 5000
 	-1   0    0    -1  
 $EndComp
 $Comp
-L IRLML6402 Q2
+L tester_m:IRLML6402 Q2
 U 1 1 58E6972E
 P 4450 4800
 F 0 "Q2" V 4700 4800 50  0000 C CNN
 F 1 "IRLML6402" V 4791 4800 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 4650 4725 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4650 4725 50  0001 L CIN
 F 3 "" H 4450 4800 50  0001 L CNN
 	1    4450 4800
 	0    -1   1    0   
 $EndComp
 $Comp
-L CP_Small C9
+L tester-rescue:CP_Small C9
 U 1 1 58E69E73
 P 4150 5100
 F 0 "C9" H 4238 5146 50  0000 L CNN
@@ -665,7 +562,7 @@ F 3 "" H 4150 5100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR014
+L tester-rescue:GND-RESCUE-tester #PWR014
 U 1 1 58E68C95
 P 4150 5300
 F 0 "#PWR014" H 4150 5050 50  0001 C CNN
@@ -676,40 +573,40 @@ F 3 "" H 4150 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R6
+L tester-rescue:R_Small R6
 U 1 1 58E69044
 P 4450 4400
 F 0 "R6" H 4391 4354 50  0000 R CNN
 F 1 "3k3" H 4391 4445 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 4450 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4450 4400 50  0001 C CNN
 F 3 "" H 4450 4400 50  0001 C CNN
 	1    4450 4400
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R7
+L tester-rescue:R_Small R7
 U 1 1 58E694F7
 P 4750 4700
 F 0 "R7" H 4850 4650 50  0000 C CNN
 F 1 "33k" H 4850 4750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 4750 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4750 4700 50  0001 C CNN
 F 3 "" H 4750 4700 50  0001 C CNN
 	1    4750 4700
 	-1   0    0    1   
 $EndComp
 $Comp
-L IRLML2402 Q1
+L tester_m:IRLML2402 Q1
 U 1 1 58E69A5F
 P 2450 4900
 F 0 "Q1" H 2656 4946 50  0000 L CNN
 F 1 "IRLML2402" H 2656 4855 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 2650 4825 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2650 4825 50  0001 L CIN
 F 3 "" H 2450 4900 50  0001 L CNN
 	1    2450 4900
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR015
+L tester-rescue:GND-RESCUE-tester #PWR015
 U 1 1 58E69E49
 P 2750 5300
 F 0 "#PWR015" H 2750 5050 50  0001 C CNN
@@ -720,7 +617,7 @@ F 3 "" H 2750 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L L_Core_Iron L1
+L tester-rescue:L_Core_Iron L1
 U 1 1 58E6A030
 P 2600 4600
 F 0 "L1" V 2825 4600 50  0000 C CNN
@@ -731,7 +628,7 @@ F 3 "" H 2600 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR016
+L tester-rescue:GND-RESCUE-tester #PWR016
 U 1 1 58E6A701
 P 2350 5300
 F 0 "#PWR016" H 2350 5050 50  0001 C CNN
@@ -744,7 +641,7 @@ $EndComp
 Text Label 7250 3950 0    60   ~ 0
 BATT_TEST
 $Comp
-L SM5819 D1
+L tester_m:SM5819 D1
 U 1 1 58E6B520
 P 2100 4600
 F 0 "D1" H 2100 4805 50  0000 C CNN
@@ -755,7 +652,7 @@ F 3 "" V 2100 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C2
+L tester-rescue:CP_Small C2
 U 1 1 58E6B7D9
 P 1550 4950
 F 0 "C2" H 1650 5050 50  0000 L CNN
@@ -766,18 +663,18 @@ F 3 "" H 1550 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C1
+L tester-rescue:C_Small C1
 U 1 1 58E6B9F3
 P 1350 4950
 F 0 "C1" H 1300 5050 50  0000 C CNN
 F 1 "0.1u" H 1250 4850 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 1350 4950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1350 4950 50  0001 C CNN
 F 3 "" H 1350 4950 50  0001 C CNN
 	1    1350 4950
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR017
+L tester-rescue:GND-RESCUE-tester #PWR017
 U 1 1 58E6BCCE
 P 1550 5300
 F 0 "#PWR017" H 1550 5050 50  0001 C CNN
@@ -788,7 +685,7 @@ F 3 "" H 1550 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR018
+L tester-rescue:GND-RESCUE-tester #PWR018
 U 1 1 58E6BD2B
 P 1350 5300
 F 0 "#PWR018" H 1350 5050 50  0001 C CNN
@@ -799,7 +696,7 @@ F 3 "" H 1350 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR019
+L power:VCC #PWR019
 U 1 1 58E6C271
 P 1550 4450
 F 0 "#PWR019" H 1550 4300 50  0001 C CNN
@@ -810,51 +707,51 @@ F 3 "" H 1550 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BC847 Q3
+L tester-rescue:BC847 Q3
 U 1 1 58E6E500
 P 5350 4350
 F 0 "Q3" H 5540 4396 50  0000 L CNN
 F 1 "BC847" H 5540 4305 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 5550 4275 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 4275 50  0001 L CIN
 F 3 "" H 5350 4350 50  0001 L CNN
 	1    5350 4350
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R_Small R8
+L tester-rescue:R_Small R8
 U 1 1 58E6E785
 P 5650 4200
 F 0 "R8" H 5591 4154 50  0000 R CNN
 F 1 "27k" H 5591 4245 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 5650 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 4200 50  0001 C CNN
 F 3 "" H 5650 4200 50  0001 C CNN
 	1    5650 4200
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R9
+L tester-rescue:R_Small R9
 U 1 1 58E6E86A
 P 5650 4500
 F 0 "R9" H 5592 4454 50  0000 R CNN
 F 1 "100k" H 5592 4545 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 5650 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 4500 50  0001 C CNN
 F 3 "" H 5650 4500 50  0001 C CNN
 	1    5650 4500
 	1    0    0    1   
 $EndComp
 $Comp
-L C_Small C10
+L tester-rescue:C_Small C10
 U 1 1 58E6ED13
 P 5850 4500
 F 0 "C10" H 5750 4600 50  0000 C CNN
 F 1 "0.01" H 5750 4400 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 5850 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 4500 50  0001 C CNN
 F 3 "" H 5850 4500 50  0001 C CNN
 	1    5850 4500
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR020
+L tester-rescue:GND-RESCUE-tester #PWR020
 U 1 1 58E6EF3E
 P 5250 4650
 F 0 "#PWR020" H 5250 4400 50  0001 C CNN
@@ -865,7 +762,7 @@ F 3 "" H 5250 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR021
+L tester-rescue:GND-RESCUE-tester #PWR021
 U 1 1 58E6EFA3
 P 5650 4650
 F 0 "#PWR021" H 5650 4400 50  0001 C CNN
@@ -876,7 +773,7 @@ F 3 "" H 5650 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR022
+L tester-rescue:GND-RESCUE-tester #PWR022
 U 1 1 58E6F008
 P 5850 4650
 F 0 "#PWR022" H 5850 4400 50  0001 C CNN
@@ -887,40 +784,40 @@ F 3 "" H 5850 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED_ALT D2
+L tester-rescue:LED_ALT D2
 U 1 1 58E6F552
 P 4900 4100
 F 0 "D2" H 5100 4050 50  0000 C CNN
 F 1 "LED_ALT" H 5000 4200 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 4900 4100 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4900 4100 50  0001 C CNN
 F 3 "" H 4900 4100 50  0001 C CNN
 	1    4900 4100
 	-1   0    0    1   
 $EndComp
 $Comp
-L BC847 Q4
+L tester-rescue:BC847 Q4
 U 1 1 58E6FEBB
 P 6600 3500
 F 0 "Q4" H 6791 3546 50  0000 L CNN
 F 1 "BC847" H 6791 3455 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 6800 3425 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6800 3425 50  0001 L CIN
 F 3 "" H 6600 3500 50  0001 L CNN
 	1    6600 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R11
+L tester-rescue:R_Small R11
 U 1 1 58E6FFC9
 P 6350 3650
 F 0 "R11" H 6408 3604 50  0000 L CNN
 F 1 "56k" H 6408 3695 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 6350 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6350 3650 50  0001 C CNN
 F 3 "" H 6350 3650 50  0001 C CNN
 	1    6350 3650
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR023
+L tester-rescue:GND-RESCUE-tester #PWR023
 U 1 1 58E701BC
 P 6350 3800
 F 0 "#PWR023" H 6350 3550 50  0001 C CNN
@@ -931,7 +828,7 @@ F 3 "" H 6350 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR024
+L tester-rescue:GND-RESCUE-tester #PWR024
 U 1 1 58E70313
 P 6700 3800
 F 0 "#PWR024" H 6700 3550 50  0001 C CNN
@@ -942,18 +839,18 @@ F 3 "" H 6700 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R13
+L tester-rescue:R_Small R13
 U 1 1 58E70784
 P 6700 3100
 F 0 "R13" H 6641 3054 50  0000 R CNN
 F 1 "10k" H 6641 3145 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 6700 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6700 3100 50  0001 C CNN
 F 3 "" H 6700 3100 50  0001 C CNN
 	1    6700 3100
 	-1   0    0    1   
 $EndComp
 $Comp
-L VCC #PWR025
+L power:VCC #PWR025
 U 1 1 58E70D63
 P 6700 2950
 F 0 "#PWR025" H 6700 2800 50  0001 C CNN
@@ -964,29 +861,29 @@ F 3 "" H 6700 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_Push SW1
+L tester-rescue:SW_Push SW1
 U 1 1 58E71041
 P 4950 3800
 F 0 "SW1" H 4650 3850 50  0000 C CNN
 F 1 "Test" H 5200 3850 50  0000 C CNN
-F 2 "" H 4950 4000 50  0001 C CNN
+F 2 "Button_Switch_SMD:Panasonic_EVQPUJ_EVQPUA" H 4950 4000 50  0001 C CNN
 F 3 "" H 4950 4000 50  0001 C CNN
 	1    4950 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT1
+L tester-rescue:Battery_Cell BT1
 U 1 1 58E71A72
 P 4750 5150
 F 0 "BT1" H 4868 5246 50  0000 L CNN
 F 1 "Battery_Cell" H 4868 5155 50  0000 L CNN
-F 2 "tester:batt" V 4750 5210 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 4750 5210 50  0001 C CNN
 F 3 "" V 4750 5210 50  0001 C CNN
 	1    4750 5150
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR026
+L tester-rescue:GND-RESCUE-tester #PWR026
 U 1 1 58E71F70
 P 4750 5300
 F 0 "#PWR026" H 4750 5050 50  0001 C CNN
@@ -997,7 +894,7 @@ F 3 "" H 4750 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X03_FEMALE J1
+L tester-rescue:CONN_01X03_FEMALE J1
 U 1 1 58E743B2
 P 9300 1800
 F 0 "J1" H 9478 1841 50  0000 L CNN
@@ -1009,29 +906,29 @@ F 3 "" H 9300 2000 50  0001 C CNN
 $EndComp
 NoConn ~ 5450 3050
 $Comp
-L R_Small R25
+L tester-rescue:R_Small R25
 U 1 1 58E76F94
 P 8000 2600
 F 0 "R25" H 7942 2554 50  0000 R CNN
 F 1 "10k" H 7942 2645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 8000 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8000 2600 50  0001 C CNN
 F 3 "" H 8000 2600 50  0001 C CNN
 	1    8000 2600
 	1    0    0    1   
 $EndComp
 $Comp
-L R_Small R26
+L tester-rescue:R_Small R26
 U 1 1 58E770A2
 P 8000 2950
 F 0 "R26" H 7942 2904 50  0000 R CNN
 F 1 "10k" H 7942 2995 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 8000 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8000 2950 50  0001 C CNN
 F 3 "" H 8000 2950 50  0001 C CNN
 	1    8000 2950
 	1    0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR027
+L tester-rescue:GND-RESCUE-tester #PWR027
 U 1 1 58E77370
 P 8000 3150
 F 0 "#PWR027" H 8000 2900 50  0001 C CNN
@@ -1042,7 +939,7 @@ F 3 "" H 8000 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR028
+L power:VCC #PWR028
 U 1 1 58E774F1
 P 8000 2450
 F 0 "#PWR028" H 8000 2300 50  0001 C CNN
@@ -1053,18 +950,18 @@ F 3 "" H 8000 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Zener D5
+L tester-rescue:D_Zener D5
 U 1 1 58E77953
 P 8300 2950
 F 0 "D5" V 8254 3029 50  0000 L CNN
 F 1 "5V1" V 8345 3029 50  0000 L CNN
-F 2 "Diodes_SMD:D_MiniMELF_Standard" H 8300 2950 50  0001 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 8300 2950 50  0001 C CNN
 F 3 "" H 8300 2950 50  0001 C CNN
 	1    8300 2950
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR029
+L tester-rescue:GND-RESCUE-tester #PWR029
 U 1 1 58E77B92
 P 8300 3150
 F 0 "#PWR029" H 8300 2900 50  0001 C CNN
@@ -1075,18 +972,18 @@ F 3 "" H 8300 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LTC4054 U4
+L tester_m:LTC4054 U4
 U 1 1 58E78359
 P 6650 5000
 F 0 "U4" H 6650 4613 60  0000 C CNN
 F 1 "LTC4054" H 6650 4719 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6350 5250 60  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6350 5250 60  0001 C CNN
 F 3 "" H 6650 5000 60  0001 C CNN
 	1    6650 5000
 	1    0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR030
+L tester-rescue:GND-RESCUE-tester #PWR030
 U 1 1 58E7873F
 P 5750 5400
 F 0 "#PWR030" H 5750 5150 50  0001 C CNN
@@ -1097,18 +994,18 @@ F 3 "" H 5750 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R20
+L tester-rescue:R_Small R20
 U 1 1 58E789AA
 P 7250 5250
 F 0 "R20" H 7309 5204 50  0000 L CNN
 F 1 "10k" H 7309 5295 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 7250 5250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7250 5250 50  0001 C CNN
 F 3 "" H 7250 5250 50  0001 C CNN
 	1    7250 5250
 	1    0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR031
+L tester-rescue:GND-RESCUE-tester #PWR031
 U 1 1 58E78C40
 P 7250 5400
 F 0 "#PWR031" H 7250 5150 50  0001 C CNN
@@ -1119,18 +1016,18 @@ F 3 "" H 7250 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C14
+L tester-rescue:C_Small C14
 U 1 1 58E79015
 P 7550 5250
 F 0 "C14" H 7458 5296 50  0000 R CNN
 F 1 "0.1u" H 7458 5205 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0603" H 7550 5250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7550 5250 50  0001 C CNN
 F 3 "" H 7550 5250 50  0001 C CNN
 	1    7550 5250
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR032
+L tester-rescue:GND-RESCUE-tester #PWR032
 U 1 1 58E79207
 P 7550 5400
 F 0 "#PWR032" H 7550 5150 50  0001 C CNN
@@ -1141,62 +1038,62 @@ F 3 "" H 7550 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R23
+L tester-rescue:R_Small R23
 U 1 1 58E7955F
 P 7850 5050
 F 0 "R23" H 7792 5004 50  0000 R CNN
 F 1 "10k" H 7792 5095 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 7850 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7850 5050 50  0001 C CNN
 F 3 "" H 7850 5050 50  0001 C CNN
 	1    7850 5050
 	1    0    0    1   
 $EndComp
 $Comp
-L R_Small R24
+L tester-rescue:R_Small R24
 U 1 1 58E7961D
 P 7850 5400
 F 0 "R24" H 7791 5354 50  0000 R CNN
 F 1 "1k" H 7791 5445 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 7850 5400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7850 5400 50  0001 C CNN
 F 3 "" H 7850 5400 50  0001 C CNN
 	1    7850 5400
 	-1   0    0    1   
 $EndComp
 $Comp
-L BC847 Q5
+L tester-rescue:BC847 Q5
 U 1 1 58E79A8A
 P 8200 5200
 F 0 "Q5" H 8391 5246 50  0000 L CNN
 F 1 "BC847" H 8391 5155 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 8400 5125 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8400 5125 50  0001 L CIN
 F 3 "" H 8200 5200 50  0001 L CNN
 	1    8200 5200
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R27
+L tester-rescue:R_Small R27
 U 1 1 58E79D92
 P 8100 4900
 F 0 "R27" V 8200 4850 50  0000 C CNN
 F 1 "1k" V 8150 5050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 8100 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 4900 50  0001 C CNN
 F 3 "" H 8100 4900 50  0001 C CNN
 	1    8100 4900
 	0    1    -1   0   
 $EndComp
 $Comp
-L LL4148 D6
+L tester-rescue:LL4148 D6
 U 1 1 58E7A54D
 P 8750 5100
 F 0 "D6" V 8796 5021 50  0000 R CNN
 F 1 "LL4148" V 8705 5021 50  0000 R CNN
-F 2 "Diodes_SMD:D_MiniMELF_Standard" H 8750 4925 50  0001 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 8750 4925 50  0001 C CNN
 F 3 "" H 8750 5100 50  0001 C CNN
 	1    8750 5100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR033
+L tester-rescue:GND-RESCUE-tester #PWR033
 U 1 1 58E7AF82
 P 7250 5950
 F 0 "#PWR033" H 7250 5700 50  0001 C CNN
@@ -1207,7 +1104,7 @@ F 3 "" H 7250 5950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR034
+L tester-rescue:GND-RESCUE-tester #PWR034
 U 1 1 58E7BD79
 P 9950 4200
 F 0 "#PWR034" H 9950 3950 50  0001 C CNN
@@ -1219,29 +1116,29 @@ F 3 "" H 9950 4200 50  0001 C CNN
 $EndComp
 NoConn ~ 10000 4500
 $Comp
-L R_Small R28
+L tester-rescue:R_Small R28
 U 1 1 58E7C246
 P 8550 4400
 F 0 "R28" V 8450 4400 50  0000 C CNN
 F 1 "330" V 8650 4400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 8550 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8550 4400 50  0001 C CNN
 F 3 "" H 8550 4400 50  0001 C CNN
 	1    8550 4400
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C15
+L tester-rescue:C_Small C15
 U 1 1 58E7C716
 P 8200 4400
 F 0 "C15" V 8150 4300 50  0000 C CNN
 F 1 "0.1" V 8150 4550 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603" H 8200 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8200 4400 50  0001 C CNN
 F 3 "" H 8200 4400 50  0001 C CNN
 	1    8200 4400
 	0    1    1    0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG035
+L power:PWR_FLAG #FLG035
 U 1 1 58E7DBC0
 P 10150 900
 F 0 "#FLG035" H 10150 975 50  0001 C CNN
@@ -1252,7 +1149,7 @@ F 3 "" H 10150 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG036
+L power:PWR_FLAG #FLG036
 U 1 1 58E7DC58
 P 10650 900
 F 0 "#FLG036" H 10650 975 50  0001 C CNN
@@ -1263,7 +1160,7 @@ F 3 "" H 10650 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR037
+L tester-rescue:GND-RESCUE-tester #PWR037
 U 1 1 58E7DCE9
 P 10650 1050
 F 0 "#PWR037" H 10650 800 50  0001 C CNN
@@ -1274,7 +1171,7 @@ F 3 "" H 10650 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR038
+L power:VCC #PWR038
 U 1 1 58E7E09A
 P 9800 900
 F 0 "#PWR038" H 9800 750 50  0001 C CNN
@@ -1285,7 +1182,7 @@ F 3 "" H 9800 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG039
+L power:PWR_FLAG #FLG039
 U 1 1 58E8018E
 P 3400 900
 F 0 "#FLG039" H 3400 975 50  0001 C CNN
@@ -1296,29 +1193,29 @@ F 3 "" H 3400 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R30
+L tester-rescue:R_Small R30
 U 1 1 58E80B3F
 P 9650 4300
 F 0 "R30" V 9550 4300 50  0000 C CNN
 F 1 "180k" V 9700 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 9650 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9650 4300 50  0001 C CNN
 F 3 "" H 9650 4300 50  0001 C CNN
 	1    9650 4300
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R29
+L tester-rescue:R_Small R29
 U 1 1 58E80EAA
 P 9300 4300
 F 0 "R29" V 9250 4150 50  0000 C CNN
 F 1 "20k" V 9350 4150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 9300 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9300 4300 50  0001 C CNN
 F 3 "" H 9300 4300 50  0001 C CNN
 	1    9300 4300
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR040
+L tester-rescue:GND-RESCUE-tester #PWR040
 U 1 1 58E812EB
 P 9050 4300
 F 0 "#PWR040" H 9050 4050 50  0001 C CNN
@@ -1329,18 +1226,18 @@ F 3 "" H 9050 4300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D_Zener D7
+L tester-rescue:D_Zener D7
 U 1 1 58E81595
 P 9250 4100
 F 0 "D7" H 9250 3884 50  0000 C CNN
 F 1 "5V1" H 9250 3975 50  0000 C CNN
-F 2 "Diodes_SMD:D_MiniMELF_Standard" H 9250 4100 50  0001 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 9250 4100 50  0001 C CNN
 F 3 "" H 9250 4100 50  0001 C CNN
 	1    9250 4100
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR041
+L tester-rescue:GND-RESCUE-tester #PWR041
 U 1 1 58E8178E
 P 9050 4100
 F 0 "#PWR041" H 9050 3850 50  0001 C CNN
@@ -1355,18 +1252,18 @@ HV
 Text Label 3350 2300 0    60   ~ 0
 HV
 $Comp
-L XC6206P332 U7
+L tester_m:XC6206P332 U7
 U 1 1 58EA17A4
 P 3600 4150
 F 0 "U7" H 3600 4537 60  0000 C CNN
 F 1 "XC6206P332" H 3600 4431 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 3550 4350 60  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 4350 60  0001 C CNN
 F 3 "" H 3550 4350 60  0001 C CNN
 	1    3600 4150
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR042
+L tester-rescue:GND-RESCUE-tester #PWR042
 U 1 1 58EA1C59
 P 3050 4300
 F 0 "#PWR042" H 3050 4050 50  0001 C CNN
@@ -1377,7 +1274,7 @@ F 3 "" H 3050 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR043
+L power:VCC #PWR043
 U 1 1 58EA1E40
 P 4000 3950
 F 0 "#PWR043" H 4000 3800 50  0001 C CNN
@@ -1388,18 +1285,18 @@ F 3 "" H 4000 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C16
+L tester-rescue:C_Small C16
 U 1 1 58EA2D73
 P 3050 4100
 F 0 "C16" H 2959 4146 50  0000 R CNN
 F 1 "1u" H 2959 4055 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0603" H 3050 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 4100 50  0001 C CNN
 F 3 "" H 3050 4100 50  0001 C CNN
 	1    3050 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X06 J3
+L tester-rescue:CONN_01X06 J3
 U 1 1 58EA652D
 P 10350 2950
 F 0 "J3" H 10428 2991 50  0000 L CNN
@@ -1410,7 +1307,7 @@ F 3 "" H 10350 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-tester #PWR044
+L tester-rescue:GND-RESCUE-tester #PWR044
 U 1 1 58EA66D2
 P 10000 3300
 F 0 "#PWR044" H 10000 3050 50  0001 C CNN
@@ -1429,12 +1326,12 @@ SCK
 Text Label 9900 3100 0    60   ~ 0
 RES
 $Comp
-L MICRO-B_USB U8
+L tester-rescue:MICRO-B_USB U8
 U 1 1 58EA9B6D
 P 10200 4400
 F 0 "U8" H 10071 4354 50  0000 R CNN
 F 1 "MICRO-B_USB" H 10071 4445 50  0000 R CNN
-F 2 "open-project:MICRO-B_USB" H 10200 4400 60  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 10200 4400 60  0001 C CNN
 F 3 "" H 10200 4400 60  0000 C CNN
 	1    10200 4400
 	-1   0    0    1   
@@ -2072,12 +1969,12 @@ Wire Wire Line
 Wire Wire Line
 	3400 3250 3400 3400
 $Comp
-L LED_Dual_ACAC D4
+L tester-rescue:LED_Dual_ACAC D4
 U 1 1 58EA8262
 P 7700 5950
 F 0 "D4" H 7700 6283 50  0000 C CNN
 F 1 "LED_Dual_ACAC" H 7700 6374 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm-3" H 7730 5950 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm-3" H 7730 5950 50  0001 C CNN
 F 3 "" H 7730 5950 50  0001 C CNN
 	1    7700 5950
 	-1   0    0    1   

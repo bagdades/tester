@@ -1,0 +1,33 @@
+:BASE SPLAN50.hlp
+1 Введение
+2 Права на перевод=PravaNaPerevod@SPLAN50.hlp
+2 Введение=Vvedenie@SPLAN50.hlp
+2 sPlan 5.0=sPlan_5_0@SPLAN50.hlp
+1 Библиотека элементов
+2 Библиотека элементов=BiblElem@SPLAN50.hlp
+2 Выбор библиотек=VyborBibl@SPLAN50.hlp
+2 Работа с файлами библиотек=RabFailBibl@SPLAN50.hlp
+1 Создание чертежей
+2 Параметры чертежа и инструменты=ParamStanitsy@SPLAN50.hlp
+2 Листы=Stranitsy@SPLAN50.hlp
+2 Линии разметки и лупа=liniiRazmet@SPLAN50.hlp
+2 Геометрические элементы=Mnogogran@SPLAN50.hlp
+2 Настройка сетки=NastrSetki@SPLAN50.hlp
+2 Размеры элементов=RazmElem@SPLAN50.hlp
+2 Точки соединения и контакты=Kontakty@SPLAN50.hlp
+2 Группы и формы=Gruppy@SPLAN50.hlp
+2 Экспорт и импорт файлов=ExportChertezha@SPLAN50.hlp
+1 Свойства элементов
+2 Символы и элементы=SimvolElem@SPLAN50.hlp
+2 Свойства и редактирование элементов=SvoistElem@SPLAN50.hlp
+2 Вид и создание элементов=SozdElem@SPLAN50.hlp
+2 Выбор, удаление и перемещение элементов=VyborUdalPeremElem@SPLAN50.hlp
+2 Цвет и выравнивание элементов=VyravnElem@SPLAN50.hlp
+2 Списки и автонумерация элементов=SpisokElem@SPLAN50.hlp
+2 Разделение и поиск элементов=PoiskElem@SPLAN50.hlp
+2 Контуры и заливка=KonturZalivka@SPLAN50.hlp
+2 Линии и их параметры=ParamLin1@SPLAN50.hlp
+2 Большие тексты и ярлыки=BolshieTexty@SPLAN50.hlp
+1 Дополнительные функции
+2 Автосохранение=Avtosohran@SPLAN50.hlp
+2 Печать=Pechat@SPLAN50.hlp
