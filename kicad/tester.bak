@@ -174,7 +174,7 @@ U 1 1 58E55BD8
 P 3150 1250
 F 0 "C7" V 3100 1150 50  0000 C CNN
 F 1 "0.1u" V 3100 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3150 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3150 1250 50  0001 C CNN
 F 3 "" H 3150 1250 50  0001 C CNN
 	1    3150 1250
 	0    1    1    0   
@@ -877,7 +877,7 @@ U 1 1 58E71A72
 P 4750 5150
 F 0 "BT1" H 4868 5246 50  0000 L CNN
 F 1 "Battery_Cell" H 4868 5155 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" V 4750 5210 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 4750 5210 50  0001 C CNN
 F 3 "" V 4750 5210 50  0001 C CNN
 	1    4750 5150
 	1    0    0    -1  
