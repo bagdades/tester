@@ -42,7 +42,7 @@ U 1 1 58E5497B
 P 3150 1050
 F 0 "L2" V 3340 1050 50  0000 C CNN
 F 1 "10uH" V 3249 1050 50  0000 C CNN
-F 2 "w_smd_inductors:inductor_smd_4.8x2.8mm" H 3150 1050 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 3150 1050 50  0001 C CNN
 F 3 "" H 3150 1050 50  0001 C CNN
 	1    3150 1050
 	0    -1   -1   0   
@@ -622,7 +622,7 @@ U 1 1 58E6A030
 P 2600 4600
 F 0 "L1" V 2825 4600 50  0000 C CNN
 F 1 "10uH" V 2734 4600 50  0000 C CNN
-F 2 "w_smd_inductors:inductor_smd_4.8x2.8mm" H 2600 4600 50  0001 C CNN
+F 2 "Inductor_SMD:L_Coilcraft_XAL5030" H 2600 4600 50  0001 C CNN
 F 3 "" H 2600 4600 50  0001 C CNN
 	1    2600 4600
 	0    -1   -1   0   
@@ -861,17 +861,6 @@ F 3 "" H 6700 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tester-rescue:SW_Push SW1
-U 1 1 58E71041
-P 4950 3800
-F 0 "SW1" H 4650 3850 50  0000 C CNN
-F 1 "Test" H 5200 3850 50  0000 C CNN
-F 2 "Button_Switch_SMD:Panasonic_EVQPUJ_EVQPUA" H 4950 4000 50  0001 C CNN
-F 3 "" H 4950 4000 50  0001 C CNN
-	1    4950 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L tester-rescue:Battery_Cell BT1
 U 1 1 58E71A72
 P 4750 5150
@@ -898,8 +887,8 @@ L tester-rescue:CONN_01X03_FEMALE J1
 U 1 1 58E743B2
 P 9300 1800
 F 0 "J1" H 9478 1841 50  0000 L CNN
-F 1 "CONN_01X03_FEMALE" H 9478 1750 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9300 2000 50  0001 C CNN
+F 1 "FEMALE" H 9650 1750 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9300 2000 50  0001 C CNN
 F 3 "" H 9300 2000 50  0001 C CNN
 	1    9300 1800
 	1    0    0    -1  
@@ -958,7 +947,7 @@ F 1 "5V1" V 8345 3029 50  0000 L CNN
 F 2 "Diode_SMD:D_MiniMELF" H 8300 2950 50  0001 C CNN
 F 3 "" H 8300 2950 50  0001 C CNN
 	1    8300 2950
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L tester-rescue:GND-RESCUE-tester #PWR029
@@ -1520,21 +1509,15 @@ Connection ~ 7500 1900
 Wire Wire Line
 	8400 1900 8400 1800
 Wire Wire Line
-	8400 1800 9200 1800
+	8400 1800 8600 1800
 Connection ~ 7600 1600
 Wire Wire Line
-	7600 1600 9200 1600
+	7600 1600 8700 1600
 Connection ~ 4750 4900
 Wire Wire Line
 	4750 5300 4750 5250
 Connection ~ 6350 3500
-Wire Wire Line
-	6100 3800 6100 3500
-Wire Wire Line
-	5150 3800 6100 3800
 Connection ~ 4450 4100
-Wire Wire Line
-	4750 3800 4450 3800
 Wire Wire Line
 	6700 2950 6700 3000
 Connection ~ 6700 3250
@@ -1580,8 +1563,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 4350 5650 4400
 Wire Wire Line
-	4450 3800 4450 4100
-Wire Wire Line
 	4450 4100 4450 4300
 Wire Wire Line
 	5250 4150 5250 4100
@@ -1590,9 +1571,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 1400 3150 3650
 Wire Wire Line
-	3150 3650 6000 3650
-Wire Wire Line
-	6000 3650 6000 2400
+	3150 3650 3900 3650
 Wire Wire Line
 	6000 2400 5950 2400
 Wire Wire Line
@@ -1628,11 +1607,11 @@ Wire Wire Line
 Connection ~ 2350 4600
 Connection ~ 4150 4600
 Wire Wire Line
-	8600 3950 4150 3950
+	8400 3950 4150 3950
 Wire Wire Line
-	8600 2100 8600 3950
+	8400 2100 8400 3950
 Wire Wire Line
-	7850 2100 8600 2100
+	7850 2100 8400 2100
 Wire Wire Line
 	2350 5100 2350 5300
 Wire Wire Line
@@ -1911,7 +1890,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 2000 7400 2000
 Wire Wire Line
-	7400 2000 9200 2000
+	7400 2000 8500 2000
 Wire Wire Line
 	7400 1350 7400 1450
 Wire Wire Line
@@ -1998,4 +1977,141 @@ Wire Wire Line
 	8000 5850 8300 5850
 Wire Wire Line
 	8750 6050 8000 6050
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5AC1877C
+P 9400 1250
+F 0 "J2" H 9480 1242 50  0000 L CNN
+F 1 "Probe1" H 9300 1050 50  0000 L CNN
+F 2 "tester:conn_tester" H 9400 1250 50  0001 C CNN
+F 3 "~" H 9400 1250 50  0001 C CNN
+	1    9400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5AC189EA
+P 9300 2200
+F 0 "J4" H 9380 2192 50  0000 L CNN
+F 1 "Probe2" H 9300 1950 50  0000 L CNN
+F 2 "tester:conn_tester" H 9300 2200 50  0001 C CNN
+F 3 "~" H 9300 2200 50  0001 C CNN
+	1    9300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L tester-rescue:GND-RESCUE-tester #PWR0101
+U 1 1 5AC18B99
+P 9150 1400
+F 0 "#PWR0101" H 9150 1150 50  0001 C CNN
+F 1 "GND" H 9155 1227 50  0000 C CNN
+F 2 "" H 9150 1400 50  0001 C CNN
+F 3 "" H 9150 1400 50  0001 C CNN
+	1    9150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L tester-rescue:GND-RESCUE-tester #PWR0102
+U 1 1 5AC18C3A
+P 9050 2350
+F 0 "#PWR0102" H 9050 2100 50  0001 C CNN
+F 1 "GND" H 9055 2177 50  0000 C CNN
+F 2 "" H 9050 2350 50  0001 C CNN
+F 3 "" H 9050 2350 50  0001 C CNN
+	1    9050 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2350 9050 2300
+Wire Wire Line
+	9050 2300 9100 2300
+Wire Wire Line
+	9150 1400 9150 1350
+Wire Wire Line
+	9150 1350 9200 1350
+Connection ~ 9050 1600
+Wire Wire Line
+	9050 1600 9200 1600
+Connection ~ 9050 2000
+Wire Wire Line
+	9050 2000 9200 2000
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5AC28CE1
+P 8950 2750
+F 0 "J5" H 9030 2792 50  0000 L CNN
+F 1 "PAD" H 9030 2701 50  0000 L CNN
+F 2 "tester:conn_threepoint" H 8950 2750 50  0001 C CNN
+F 3 "~" H 8950 2750 50  0001 C CNN
+	1    8950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2650 8700 2650
+Wire Wire Line
+	8700 2650 8700 1600
+Connection ~ 8700 1600
+Wire Wire Line
+	8700 1600 9050 1600
+Wire Wire Line
+	8750 2750 8600 2750
+Wire Wire Line
+	8600 2750 8600 1800
+Connection ~ 8600 1800
+Wire Wire Line
+	8600 1800 9200 1800
+Wire Wire Line
+	8750 2850 8500 2850
+Wire Wire Line
+	8500 2850 8500 2000
+Connection ~ 8500 2000
+Wire Wire Line
+	8500 2000 9050 2000
+Wire Wire Line
+	9050 2200 9100 2200
+Wire Wire Line
+	9050 2000 9050 2200
+Wire Wire Line
+	9200 1250 9050 1250
+Wire Wire Line
+	9050 1250 9050 1600
+Wire Wire Line
+	4750 3800 4700 3800
+Wire Wire Line
+	3900 3650 3900 3450
+Wire Wire Line
+	3900 3450 6000 3450
+Wire Wire Line
+	6000 3450 6000 2400
+Wire Wire Line
+	4450 3600 4450 4100
+Wire Wire Line
+	4450 3600 4750 3600
+Wire Wire Line
+	5150 3600 6100 3600
+Wire Wire Line
+	6100 3600 6100 3500
+$Comp
+L tester-rescue:GND-RESCUE-tester #PWR035
+U 1 1 5B07AEB0
+P 4700 3800
+F 0 "#PWR035" H 4700 3550 50  0001 C CNN
+F 1 "GND" H 4705 3627 50  0000 C CNN
+F 2 "" H 4700 3800 50  0001 C CNN
+F 3 "" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW1
+U 1 1 5AE7EFF2
+P 4950 3600
+F 0 "SW1" H 4500 3650 50  0000 C CNN
+F 1 "Test" H 5250 3650 50  0000 C CNN
+F 2 "tester:BUT6120" H 4950 3800 50  0001 C CNN
+F 3 "" H 4950 3800 50  0001 C CNN
+	1    4950 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5150 3800
 $EndSCHEMATC
