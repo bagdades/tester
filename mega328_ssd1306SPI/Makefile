@@ -66,7 +66,7 @@ CFLAGS += -DNO_ICONS_DEMO
 # Select your language:
 # Available languages are: LANG_BRASIL, LANG_CZECH, LANG_DUTCH, LANG_ENGLISH, LANG_GERMAN, LANG_HUNGARIAN, LANG_ITALIAN,
 #                          LANG_LITHUANIAN, LANG_POLISH, LANG_RUSSIAN , LANG_SLOVAK, LANG_SLOVENE, LANG_SPANISH, LANG_UKRAINIAN
-UI_LANGUAGE = LANG_UKRAINIAN
+UI_LANGUAGE = LANG_ENGLISH
 
 # The LCD_CYRILLIC option is necessary, if you have a display with cyrillic characterset.
 # This lcd-display don't have a character for Ohm and for µ (micro).
@@ -354,13 +354,13 @@ CFLAGS += -DWITH_XTAL
 
 # Select your programmer type, speed and port, if you wish to use avrdude.
 # setting for DIAMEX ALL_AVR, Atmel AVRISP-mkII
-# PROGRAMMER=avrispmkII
-# BitClock=1.0
-# PORT=usb
-# setting for USBasp
 PROGRAMMER=usbasp
-BitClock=20
+BitClock=1.0
 PORT=usb
+# setting for USBasp
+#PROGRAMMER=usbasp
+#BitClock=20
+#PORT=usb
 # setting for ARDUINO MEGA, requires bootloader
 #PROGRAMMER=wiring
 #PORT = /dev/ttyACM0

@@ -520,13 +520,13 @@ Text Label 2800 2700 0    60   ~ 0
 D0
 Text Label 2800 2800 0    60   ~ 0
 D1
-Text Label 5700 2850 0    60   ~ 0
-RS
-Text Label 5700 2750 0    60   ~ 0
-D/C
-Text Label 5700 2650 0    60   ~ 0
-D0
 Text Label 5700 2550 0    60   ~ 0
+RS
+Text Label 5700 2650 0    60   ~ 0
+D/C
+Text Label 5700 2750 0    60   ~ 0
+D0
+Text Label 5700 2850 0    60   ~ 0
 D1
 $Comp
 L tester_m:NCP1450A U2
@@ -2114,4 +2114,8 @@ $EndComp
 Wire Wire Line
 	5150 3800 5250 3800
 NoConn ~ 4750 3800
+Text Notes 2600 2700 0    50   ~ 0
+SCLK
+Text Notes 2600 2800 0    50   ~ 0
+SDIN
 $EndSCHEMATC

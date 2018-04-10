@@ -2076,8 +2076,6 @@ Wire Wire Line
 Wire Wire Line
 	9050 1250 9050 1600
 Wire Wire Line
-	4750 3800 4700 3800
-Wire Wire Line
 	3900 3650 3900 3450
 Wire Wire Line
 	3900 3450 6000 3450
@@ -2092,17 +2090,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 3600 6100 3500
 $Comp
-L tester-rescue:GND-RESCUE-tester #PWR035
-U 1 1 5B07AEB0
-P 4700 3800
-F 0 "#PWR035" H 4700 3550 50  0001 C CNN
-F 1 "GND" H 4705 3627 50  0000 C CNN
-F 2 "" H 4700 3800 50  0001 C CNN
-F 3 "" H 4700 3800 50  0001 C CNN
-	1    4700 3800
-	0    1    1    0   
-$EndComp
-$Comp
 L Switch:SW_Push_Dual SW1
 U 1 1 5AE7EFF2
 P 4950 3600
@@ -2111,7 +2098,24 @@ F 1 "Test" H 5250 3650 50  0000 C CNN
 F 2 "tester:BUT6120" H 4950 3800 50  0001 C CNN
 F 3 "" H 4950 3800 50  0001 C CNN
 	1    4950 3600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
-NoConn ~ 5150 3800
+$Comp
+L tester-rescue:GND-RESCUE-tester #PWR?
+U 1 1 5B1BE9C1
+P 5250 3800
+F 0 "#PWR?" H 5250 3550 50  0001 C CNN
+F 1 "GND" H 5255 3627 50  0000 C CNN
+F 2 "" H 5250 3800 50  0001 C CNN
+F 3 "" H 5250 3800 50  0001 C CNN
+	1    5250 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 3800 5250 3800
+NoConn ~ 4750 3800
+Text Notes 2600 2700 0    50   ~ 0
+SCLK
+Text Notes 2600 2800 0    50   ~ 0
+SDIN
 $EndSCHEMATC

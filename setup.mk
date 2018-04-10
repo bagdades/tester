@@ -93,7 +93,7 @@ HEX_FLASH_FLAGS = --change-section-lma .eeprom=0x2000
 ifeq ($(OP_MHZ),1)
 # RC operation ,CLK 1MHz
 FUSES_INT = -U lfuse:w:0x62:m -U hfuse:w:0xdc:m
-# -U efuse:w:0xf9:m
+# -U efuse:w:0xf9:mHEX_FLASH_FLAGS
 # Operation with 8MHz crystal and /8 divider , full swing crystal
 FUSES_CRY = -U lfuse:w:0x77:m -U hfuse:w:0xdc:m
 # -U efuse:w:0xf9:m

@@ -493,22 +493,22 @@
    /* the Reset Pin, 0 = Reset */
    #define HW_LCD_RES_DDR         DDRD
    #define HW_LCD_RES_PORT        PORTD
-   #define HW_LCD_RES_PIN         0
+   #define HW_LCD_RES_PIN         3
 
    /* serial clock input  (SCL) */
    #define HW_LCD_EN_DDR          DDRD
    #define HW_LCD_EN_PORT         PORTD
-   #define HW_LCD_EN_PIN          2
+   #define HW_LCD_EN_PIN          1
 
    /* command / data switch  0=command 1=data */
    #define HW_LCD_RS_DDR          DDRD
    #define HW_LCD_RS_PORT         PORTD
-   #define HW_LCD_RS_PIN          3
+   #define HW_LCD_RS_PIN          0
 
    /* serial data input SI | SDA */
    #define HW_LCD_B0_DDR          DDRD
    #define HW_LCD_B0_PORT         PORTD
-   #define HW_LCD_B0_PIN          1
+   #define HW_LCD_B0_PIN          2
 
    /* Chip Enable input */
    #define HW_LCD_CE_DDR          DDRD

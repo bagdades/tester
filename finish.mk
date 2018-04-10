@@ -91,7 +91,7 @@ $(TARGET): $(OBJECTS)
 	avr-objcopy -O ihex $(HEX_FLASH_FLAGS)  $< $@
 
 %.eep: $(TARGET)
-	-avr-objcopy $(HEX_EEPROM_FLAGS) -O ihex $< $@ || exit 0
+	-avr-objcopy -j .eeprom -O ihex $< $@ || exit 0
 
 %.lss: $(TARGET)
 	avr-objdump -h -S $< > $@
