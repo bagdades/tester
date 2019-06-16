@@ -354,7 +354,7 @@ CFLAGS += -DWITH_XTAL
 
 # Select your programmer type, speed and port, if you wish to use avrdude.
 # setting for DIAMEX ALL_AVR, Atmel AVRISP-mkII
-PROGRAMMER=avrispmkII
+PROGRAMMER=usbasp
 BitClock=1.0
 PORT=usb
 # setting for USBasp
