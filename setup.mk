@@ -93,7 +93,7 @@ HEX_FLASH_FLAGS = --change-section-lma .eeprom=0x2000
 ifeq ($(OP_MHZ),1)
 # RC operation ,CLK 1MHz
 FUSES_INT = -U lfuse:w:0x62:m -U hfuse:w:0xdc:m
-# -U efuse:w:0xf9:mHEX_FLASH_FLAGS
+# -U efuse:w:0xf9:m
 # Operation with 8MHz crystal and /8 divider , full swing crystal
 FUSES_CRY = -U lfuse:w:0x77:m -U hfuse:w:0xdc:m
 # -U efuse:w:0xf9:m
@@ -288,7 +288,7 @@ ASMFLAGS += -x assembler-with-cpp -Wa,-gdwarf2
 
 ## Linker flags
 LDFLAGS = $(COMMON)
-# LDFLAGS +=  -Wl,--relax,-Map=$(PROJECT).map
+LDFLAGS +=  -Wl,--relax##,-Map=$(PROJECT).map
 
 ## Intel Hex file production flags
 HEX_FLASH_FLAGS = -R .eeprom -R .fuse -R .lock -R .signature
